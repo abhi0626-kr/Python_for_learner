@@ -145,9 +145,24 @@
 
 # #Set()
 # #Set - List
+# S = {"Ahbishek","Calisthanics", "Gym", "Running" }
+# print(S)
+# S1 = (list(S))
+# print(type(S1))
 
-S = {"Ahbishek","Calisthanics", "Gym", "Running" }
-print(S)
-S1 = (list(S))
-print(type(S1))
-# #Array()
+# #Set - Tuple
+# S = {"Ahbishek","Calisthanics", "Gym", "Running" }
+# print(S)
+# S1 = (tuple(S))
+# print(type(S1))
+
+# #set - Dictionary
+# #Set - Dictionary is not possible to convert because we a (lable or key values) for that.
+
+# #set - Array
+# import numpy as np
+# S = {"Ahbishek","Calisthanics", "Gym", "Running" }
+# print(S)
+# S1 = (np.array(S))
+# print(type(S1))
+
