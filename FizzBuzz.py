@@ -49,3 +49,35 @@ if n > 1:
                         break
         else:
                 print(n, "is a prime number")
+
+
+#write a program to Add two numbers without '+' or "Sum" operator
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+while b != 0:
+        carry = a & b
+        a = a ^ b
+        b = carry << 1 
+        print("The sum of the two numbers is: ", a)
+
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+C = a-(-b)
+print("The sum of the two numbers is: ", C)
+
+
+# Nutural number's , perfect number's, Armstrong number's, Neon number's
+
+#write a program to find perfect number
+n = int(input("Enter the value of n : "))
+sum = 0
+for i in range(1, n):
+        if n % i == 0:
+                print(i)
+                sum += i
+if sum == n:
+        print(n, "is a perfect number")
+else:
+        print(n, "is not a perfect number")

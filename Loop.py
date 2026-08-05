@@ -42,4 +42,44 @@ for i in range(0,n,2): #0 = start, n = stop, 2 = step
 x = 101
 for i in range(0,x+1): #0 = start, 101 + 1 = stop
     print(i)
-        
+
+
+
+
+#nested for loop
+#Nested for loop is used to run the for loop inside the for loop, it is used to run the for loop multiple times, it is used to run the for loop inside the for loop.
+#Combination
+
+color = ['Red', 'Green', 'Blue'] #Outer Loop
+things = ['Car', 'Bike', 'Bus'] #Inner Loop
+for i in color:
+    for j in things:
+        print(i, j)
+
+B =["Alex", "David", "lara", "Sam"]
+C = ["Black", "Red", "Blue"]
+D = ["Box","Clothes", "Car"]
+for i in C:
+    for j in D:
+        if 'l' in C:
+            continue
+        for k in B:
+                print(i, j, k)
+
+
+
+
+#Write a program to generate the multiplication table from 2 to given n number
+n = input("Enter the number: ")
+if n.isdigit():
+    n = int(n)
+
+    if n>= 2:
+        for i in range(2, n+1):
+            for j in range(1, 13):
+                print(i, "x", j, "=", i*j)
+            print("\n")
+    else:
+       print("Please enter a number greater than 2.")
+else:
+    print("Please enter a valid number.")
