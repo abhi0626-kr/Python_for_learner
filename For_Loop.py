@@ -1,5 +1,5 @@
 #For loop
-#For loop used t run the statement or group of statement or block of code.
+#For loop used to run the statement or group of statement or block of code.
 #For loop is highly work on Advance Datatype (List, tuple, Dictionary, Set) and only work with string in standard Datatype.
 
 #syntax of For loop.
@@ -83,3 +83,7 @@ if n.isdigit():
        print("Please enter a number greater than 2.")
 else:
     print("Please enter a valid number.")
+
+
+
+

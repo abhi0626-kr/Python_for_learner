@@ -1,6 +1,6 @@
 # Conditions Statement
 
-
+#If, Elif, else statements
 
 print("Conditions Statement")
 A = int(input("Enter a number: "))
@@ -28,6 +28,7 @@ print("-------------------------------------------------------------------------
 
 
 #nested if statement
+#If inside a if is called nested if statement.
 print("Nested If Statement option 1")
 
 N = int(input("Enter a number: "))
@@ -49,6 +50,7 @@ print("-------------------------------------------------------------------------
 
 print("Nested If Statement option 2 with elif")
 
+#Based on the mark find the grade of the student using elif statement.
 
 N = int(input("Enter a number: "))
 if N>=80:
@@ -78,8 +80,6 @@ B = int (input("Enter second number: "))
 
 symbol_options = input("choose the operation you want to perform (+, -, *, /): ")
 
-
-
 if B == float('inf') or B == float('-inf'):
     print("Error: Division by infinity is not allowed.")
 elif A == float('inf') or A == float('-inf'):
@@ -97,3 +97,4 @@ elif A == float('inf') or A == float('-inf'):
         
 else:
     print("Invalid operation. Please enter a valid operation (+, -, *, /).")    
+
