@@ -7,6 +7,9 @@
 #     block of code/execution statement
 
 #The X contain only the standard datatype (String)
+from pyparsing import alphanums
+
+
 x = "Hello_world"
 for i in x:
     print(i)
@@ -86,4 +89,11 @@ else:
 
 
 
+# Write a program to print the list of string in upper case using for loop.
 
+List = [1, 2, 3, 4, 5,"Boom222","ghj", "ddykbv", 6, 7, 8, 9, 10]
+
+for i in List:
+    if type(i) == str:
+        i = i.upper()
+        print(i)
