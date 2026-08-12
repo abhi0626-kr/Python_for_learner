@@ -81,3 +81,16 @@ if sum == n:
         print(n, "is a perfect number")
 else:
         print(n, "is not a perfect number")
+
+
+# Fibonacci Series
+
+fib_lst = [0,1]
+
+n=10 
+
+for i in range(n-2):
+    val = fib_lst[-1] + fib_lst[-2]
+    fib_lst.append(val)
+
+print(fib_lst)

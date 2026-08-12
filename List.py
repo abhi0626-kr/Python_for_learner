@@ -87,6 +87,56 @@ a.pop()
 print(a) # Output: [1, 2, 3, "Python", 5,]
 
 
+# Wirte a program to add 1 - 100 in the List.
+x = []
+for i in range (1, 101):
+    x.append(i)
+    print(x)
 
+
+# # Wirte a program to add 1 - 100 in the enev numbers in even list and odd numbers in odd list.
+even_lst=[]
+odd_lst=[]
+
+for i in range(1,101):
+    if i %2==0:
+        even_lst.append(i)
+    else:
+        odd_lst.append(i)
+
+
+# POP cannot be used in Loops
+x = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+ 
+for i in range(len(x)):
+    if x[i] ==5:
+        x.pop()
+
+        
+# # Write a program to find the largest number in the list without using max() function.
+
+x = [0,1,1,2,3,5,8,13,21,34]
+largest = x[0]
+
+for i in range(1, len(x)):
+    if x[i] > largest:
+        largest = x[i]
+
+print("The largest number in the list is:", largest)
+
+
+
+# Write a program to find the second largest number in the list without using max() function.
+
+x = [0,1,1,2,3,5,8,13,21,34]
+second_largest = x[0]
+largest = x[0]
+for i in x:
+    if i > largest:
+        second_largest = largest
+        largest = i
+    elif i > second_largest and i != largest:
+        second_largest = i
+print("The second largest number in the list is:", second_largest)
 
 
