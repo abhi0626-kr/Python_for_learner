@@ -103,7 +103,15 @@ for i in range(1,101):
         even_lst.append(i)
     else:
         odd_lst.append(i)
+print("Even List:", even_lst)
+print("Odd List:", odd_lst)
 
+# Write a program to add 1 - 100 in the enev numbers in even list and odd numbers in odd list using List Comprehension.
+even_lst = [i for i in range(1, 101) if i % 2 == 0]
+odd_lst = [i for i in range(1, 101) if i % 2 != 0]
+
+print("Even List:", even_lst)
+print("Odd List:", odd_lst)
 
 # POP cannot be used in Loops
 x = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
@@ -140,3 +148,80 @@ for i in x:
 print("The second largest number in the list is:", second_largest)
 
 
+
+# Given an List of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+# You may assume that each input would have exactly one solution, and you may not use the same element twice.
+# You can return the answer in any order.
+
+a = [2,7,11,15]
+
+target = 26
+
+for i in range(len(a)):
+    for j in range(1, len(a) -1):
+        if i != j:
+            if a[i] + a[j] == target:
+                print([i,j], [a[i], a[j]], "=", target)
+                break
+
+
+# List Comprehension.
+# List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+new_list = []
+
+for x in fruits:
+    if 'a' in x:
+        new_list.append(x)
+        
+print(new_list)
+
+print("List Comprehension")
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+new_list = [x for x in fruits if 'a' in x]
+print(new_list)
+
+
+
+# List Sorting.
+
+# There are two types of sorting in List:
+# 1. Ascending Order: from smallest to largest.
+# 2. Descending Order: from largest to smallest.
+
+# Sort() method is used to sort the list in ascending order by default.
+
+list = [100, 50, 65, 82, 23]
+list.sort()
+print(list) # Output: [23, 50, 65, 82,100]
+
+#Sort() using reverse=True parameter sorts the list in descending order.
+list.sort(reverse=True)
+print(list) # Output: [100, 82, 65, 50, 23]
+
+# The reverse()
+# The reverse() method reverses the current order of the list.
+list.reverse()
+print(list) # Output: [23, 50, 65, 82, 100]
+
+#reverse with reversed() function using index value.
+x = list[::-1]
+print(x)
+
+
+# In the string list, the sort() method sorts the list Uppercase letters first, followed by lowercase letters. 
+List = ["af", "Oe", "Kia", "che", "Bmw", "Audi"]
+List.sort()
+print(List) # Output: ['Audi', 'Bmw', 'Kia', 'Oe', 'af', 'che']
+
+
+# # Check the given values is palindrome or not.
+x = "madam"
+
+y = x[::-1]
+if x == y:
+    print(x," = The given value is palindrome")
+else:
+    print(x,"The given value is not palindrome")
