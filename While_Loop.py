@@ -23,9 +23,9 @@ while y >= 0:
 
 i = 0
 while i<=10:
-    
+    i += 1 
     if i == 5:
-        i += 1 
+        
         break # If we use break statement it will stop the loop when the condition is met.
     print(i)
 
@@ -52,7 +52,7 @@ while 'p' in x:
 # The True () fun
 x = 0 
 while True:
-    input("This will run infinite times unless broken.")
+    input("This will run 10 times unless broken.")
     x += 1
     print(x)
     if x >= 10:
