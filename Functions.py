@@ -145,10 +145,48 @@ def add(a, b):
 A = "Global Variable"
 
 def local_variable():
-    A = "Local Variable"
-    return A # It will print the local variable.
-    print(A)
+    B = "Local Variable"
+    # return A # It will print the local variable.
+    print(A, B)
 
 
-# print(local_variable())
-print(A) # It will print the global variable.
+local_variable() # It will print the local variable.
+# # print(local_variable())
+# print(A) # It will print the global variable.
+
+
+# Convert a local variable to a global variable using the global keyword.
+def convert_to_global():
+    global C # It will convert the local variable to a global variable.
+    C = "Global Variable"
+    print(C)
+
+convert_to_global() # It will print the global variable.
+print(C) # It will print the global variable.
+
+
+# Update a global variable using the global keyword.
+# It's overriding the global variable with a new value.
+High_Score = 100
+
+def update_score():
+    global High_Score # It will update the global variable.
+    High_Score = 200
+    print(High_Score)
+
+update_score() # It will print the updated global variable.
+print(High_Score) # It will print the updated global variable.
+
+
+
+# f-string : print(f"")
+
+a = 50
+b = 11
+
+print("The sum of", a, "and", b, "is", a + b) # It will print the sum of a and b.
+# Using the (f-string).
+print(f"The sum of {a} and {b} is {a + b}.") # It also print the sum of a and b.
+
+
+
