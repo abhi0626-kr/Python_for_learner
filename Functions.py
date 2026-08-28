@@ -43,12 +43,13 @@
 
 
 def greet(): # greet() is a function.
-    N = input("Enter your name: ")
+    N = input("Enter your name for greet: ")
     print(f"Hello, {N}!")
 greet()
 
+
 def greeting(name, age): # (name, age) are parameters.
-    name = input("Enter your name: ")
+    name = input("Enter your name for greeting: ")
     age = input("Enter your age: ")
     print(f"Hello, {name}! You are {age} years old.")
 greeting("name", "age")

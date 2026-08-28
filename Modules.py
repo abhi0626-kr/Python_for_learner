@@ -10,9 +10,6 @@
 # If we want to use a function from another file in the same directory.
 # We can use the import statement to import the file and then use its functions.
 
-from Functions import greet, greeting, Greet, local_variable
-
+from Functions import greet
+import numpy as np
 greet()
-greeting('Tanmay', 20)
-Greet('Sukuna')
-local_variable()
