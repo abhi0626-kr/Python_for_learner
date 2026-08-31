@@ -1,0 +1,5 @@
+File handling is an important aspect of programming that allows you to read, write, and manipulate files on your computer.
+
+In Python, you can work with files using built-in functions and methods.It provides a way to store and retrieve data, making it possible to persist information between program executions. 
+
+And using file handling, you can create, read, update, and delete files, as well as perform various operations on their contents.
