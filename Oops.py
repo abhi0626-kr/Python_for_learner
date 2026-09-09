@@ -1,9 +1,24 @@
-# Class
-# Object
+# class
+# object
 # Constructor
-# Self (instance variable)
-# Encapsulation
+# self  (instance variable, instance Function)
 
+# Encapsulation
+#     Private, Public, Protected
+    
+# Polymorphism
+#     Method Overrding, Method Overloading
+#     SuperClass
+    
+# Inheritance
+#     Single Inheritance
+#     Multilevel Inheritance
+#     Hierarichal Inheritance
+#     Multiple Inheritance
+#     Hybrid Inheritance
+    
+    
+# Application Programming 
 
 # OOPS(Object-Oriented Programming System) is a programming paradigm that uses objects and classes to structure code. 
     # It allows for encapsulation, inheritance, and polymorphism, making it easier to manage and maintain complex software systems.
@@ -41,9 +56,9 @@ obj = Car()  # Creating an object of the class
 obj.Brand()  # Calling a method of the class using the object
 
 
-# Constructor:
-    # A constructor is a special method in a class that is automatically called when an object 
-      # of the class is created. It is used to initialize the attributes of the object.
+# # Constructor:
+#     # A constructor is a special method in a class that is automatically called when an object 
+#       # of the class is created. It is used to initialize the attributes of the object.
 
 class Test:
     def __init__(self, a):
@@ -82,4 +97,4 @@ Student1.display_marks()
     # Encapsulation is the process of bundling data (variables) and methods (functions) 
      # that operate on the data into a single unit, 
       # i.e.,  class + Variable + Function = Encapsulation.
-   
+
