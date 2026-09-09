@@ -92,20 +92,43 @@ except FileNotFoundError:
 
 # Update mode:
 # Example:  update mode.
+File_Name = "example.txt"
 try:
-    file = open("example.txt", "r+")  # Open a file in update mode
-    file.write("This is an updated line.")  # Write to the file
+    file = open("example.txt", "r")  # Open a file in update mode
+    Content = file.readlines()  # Read all lines from the file
     file.close()  # Close the file after use.
 except FileNotFoundError:
     print("Error: The file 'example.txt' does not exist.")
     print("Please create the file first.")
+else :
+    for i in Content:
+        i = i.replace("/n", "")
+        i = i.replace(".", "./n")
+        for j in range(1, 100):
+            if f"[{j}]" in i:
+                i = i.replace(f"[{j}]","." )
+        print(i)
 
+        
 # Delete mode:
 # Example:  delete mode.
+
+# We have to use the 'os' module to delete a file in Python. 
+
+import os
+
+File = "WpSystem"
+path = "A:/"
+print(File +" " + path)
+File_Name = (File +" " + path)
+
 try:
-    file = open("example.txt", "w")  # Open a file in write mode
-    file.write("")  # Write an empty string to the file
-    file.close()  # Close the file after use.
+    if os.path.exists(File + path):
+        os.remove(File + path)  # Delete the file
+        print(f"File '{File_Name}' has been deleted.")
+    else:
+        print(f"Error: The file '{File_Name}' does not exist.")
+        print("Please create the file first.")
 except FileNotFoundError:
-    print("Error: The file 'example.txt' does not exist.")
+    print(f"Error: The file '{File_Name}' does not exist.")
     print("Please create the file first.")
