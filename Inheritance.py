@@ -135,3 +135,95 @@ obj = Teacher("T001", "Gojo", "Maths")
 obj.Teacher_details()
 obj.student_details("S001", "Itadori", "A")
 obj.Pricriple("P001", "Sukuna", "Tokyo")
+
+
+# Hierarichal Inheritance:
+print("Hierarichal Inheritance Example ------------------------------------------------------------------------------------------")
+class I: # Parent Class
+    def display_I(self):
+        print("Class I Function is Called") 
+class J(I): # Child Class
+    def display_J(self):
+        print("Class J Function is Called") 
+class K(J): # Child Class
+    def display_K(self):
+        print("Class K Function is Called")
+
+obj = J() # We calling the class B object because
+obj.display_I() # Calling function from parent class I
+obj.display_J() # Calling function from class J
+
+obj2 = K() # We calling the class C object because
+obj2.display_I() # Calling function from parent class I
+obj2.display_K() # Calling function from class K
+
+class H_Employee: # Parent Class
+    def __init__(self, Emp_ID, Emp_Name, position):
+        self.Emp_ID = Emp_ID
+        self.Emp_Name = Emp_Name
+        self.position = position
+
+    def Work(self):
+        print(f"Emp_ID: {self.Emp_ID}, Emp_Name: {self.Emp_Name}, Position: {self.position}")
+
+class H_Developer(H_Employee): # Child Class
+    def __init__(self,Dev_ID,Dev_Name ,language):
+        # super().__init__(Emp_ID, Emp_Name, position)
+        self.Dev_ID = Dev_ID
+        self.Dev_Name = Dev_Name
+        self.language = language
+
+    def Work(self):
+        super().Work()
+        print(f"Developer ID: {self.Dev_ID}, Developer Name: {self.Dev_Name}, Language: {self.language}")
+
+class H_Designer(H_Employee): # Child Class
+    def __init__(self,Des_ID,Des_Name ,tools):
+        # super().__init__(Emp_ID, Emp_Name, position)
+        self.Des_ID = Des_ID
+        self.Des_Name = Des_Name
+        self.tools = tools
+
+    def Work(self):
+        super().Work()
+        print(f"Designer ID: {self.Des_ID}, Designer Name: {self.Des_Name}, Tools: {self.tools}")
+
+class H_Tester(H_Employee): # Child Class
+    def __init__(self,Test_ID,Test_Name ,test_cases):
+        # super().__init__(Emp_ID, Emp_Name, position)
+        self.Test_ID = Test_ID
+        self.Test_Name = Test_Name
+        self.test_cases = test_cases
+
+    def Work(self):
+        super().Work()
+        print(f"Tester ID: {self.Test_ID}, Tester Name: {self.Test_Name}, Test Cases: {self.test_cases}")
+obj = H_Employee("Emp1", "Alice", "Manager")
+obj.Work()
+obj = H_Developer("Dev1", "Bob", "Python")
+obj.Work()
+obj = H_Designer("Des1", "Charlie", "Photoshop")
+obj.Work()
+obj = H_Tester("Test1", "David", "Test Case 1")
+
+
+# Multiple Inheritance:
+# It's also called as Diamond Problem. 
+print("Multiple Inheritance Example ------------------------------------------------------------------------------------------")
+
+class Parent1:
+    def display_Parent1(self):
+        print("Class Parent1 Function is Called")   
+class Parent2:
+    def display_Parent2(self):
+        print("Class Parent2 Function is Called")   
+class Child(Parent1, Parent2):
+    def display_Child(self):
+        Parent1.display_Parent1(self) # Calling function from parent class Parent1
+        Parent2.display_Parent2(self) # Calling function from parent class Parent2
+        print("Class Child Function is Called")
+
+obj = Child() # We calling the class Child object because
+# obj.display_Parent1() # Calling function from parent class Parent1
+# obj.display_Parent2() # Calling function from parent class Parent2
+obj.display_Child() # Calling function from class Child
