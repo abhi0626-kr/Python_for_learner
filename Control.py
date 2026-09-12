@@ -5,13 +5,30 @@
  #continue
 
 #Break Statement.
-i = int(input("Enter the i value : "))
+M = int(input("Enter the i value : "))
 
-for i in range(100):
+for i in range(M):
     if i == 60:
         break
     print(i)
 
+# continue Statement
+N = int(input("Enter the i value : "))
+
+for i in range(N):
+    if i == 60:
+        continue
+    print(i)
+
+# Pass Statement
+O = int(input("Enter the i value : "))
+
+for i in range(O):
+    if i == 60:
+        pass
+    print(i)
+
+    
 #write a program to print the numbers Sum of n numbers. eg N = 3 it will show 1+2+3 = 6
 n = int(input("Enter the value of n : "))
 sum = 0
